@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <!-- css sheet -->
+    <link rel="stylesheet" href="./main.css" />
+    <!-- NES.css -->
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Press Start 2P font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./dist/app.js" defer></script>
+  </head>
+
+  <body class="nes-container is-rounded is-dark">
+    <div id="container" class="nes-container with-title is-rounded is-dark">
+      <p class="title">Memory Game</p>
+      <p class="nes-text is-primary">Match Sets of Two</p>
+      <!-- game grid w/ score -->
+      <div
+        id="game"
+        class="nes-container with-title is-centered is-rounded is-dark"
+      >
+        <p class="title">Score: <span id="result" default="0">0</span></p>
+        <div class="grid"></div>
+      </div>
+    </div>
+    <button id="restart" class="nes-btn is-success">Restart?</button>
+  </body>
+</html>
